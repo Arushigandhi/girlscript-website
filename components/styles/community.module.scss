@@ -1,1 +1,118 @@
 @import "./variables";
+
+.head2, .head1{
+    color: $gs-pink;
+    
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: min-content;
+    line-height: 2.9rem;
+    font-size: 4rem;
+    margin-bottom: 6rem;
+}
+
+.head2{
+    color: $gs-red;
+}
+
+.communityContainer{
+    padding: 4rem;
+    font-family: 'Poppins';
+    background: $gs-white;
+}
+
+.subhead{
+    color: $gs-red;
+    font-size: 1.2rem;
+    margin-bottom: 10rem;
+    font-weight: 500;
+
+}
+
+.timeline{
+    :global(.ant-steps-item-tail::after){
+        background-color: $gs-pink !important;
+        
+    }
+    :global(.ant-steps-icon-dot){
+        background-color: $gs-pink !important;
+        border-radius: 0;
+        
+    }
+    :global(.ant-steps-item-title){
+       font-size: 0.6rem;
+       color: $gs-pink !important;
+        
+    }
+}
+
+.timelineContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card{
+    background-color: $gs-red;
+    height: 6rem;
+    width: 8rem;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 0.5rem;
+    font-weight: 600;
+    transform-style: preserve-3d;
+    transition: all 0.75s ease;
+    
+}
+
+.cardContent{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+.cardFront{
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardBack{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Card:hover{
+    transform: rotateY(180deg);
+}
