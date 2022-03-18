@@ -6,17 +6,17 @@ import Team from '../components/Team'
 import Community from '../components/Community'
 import Faq from '../components/faq'
 import Footer from '../components/Footer'
-
+// import 'antd/dist/antd.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <NavBar/>
-      <Hero/>
-      <About/>
-      <Team/>
-      <Community/>
-      <Faq/>
-      <Footer/>
+      <NavBar />
+      <Hero />
+      <About />
+      <Team />
+      <Community />
+      <Faq />
+      <Footer />
     </div>
   )
 }
